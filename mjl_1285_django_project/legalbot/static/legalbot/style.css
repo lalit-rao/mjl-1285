@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    overflow: hidden;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1450A3;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.logo a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links li {
+    margin: 2px 35px;
+    font-weight: bold;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-button {
+    background-color: #B64848;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-button:hover{
+    background-color: #c13939;
+}
+
+.nav-right{
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background-color: #D9D9D9;
+    height: 100vh;
+    float: left;
+    overflow-y: hidden;
+}
+
+.sidebar h2 {
+    margin: 20px;
+    margin-top: 10px;
+    text-align: left;
+}
+
+.history-block{
+    background-color: #f0efef;
+    margin: 10px;
+    padding: 3px;
+    border-radius: 8px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    height: 221px;
+    overflow-y: scroll;
+}
+
+.history-section {
+    padding: 10px;
+    margin: 10px;
+    background-color: #E0E0E0;
+    border-radius: 15px;
+}
+
+.pdf-button {
+    position: relative;
+    top: 52%;
+    display: block;
+    margin: 0 auto;
+    margin-top: auto;
+    padding: 10px 20px;
+    background-color: #f7f5f5;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.pdf-button:hover{
+    background-color:#EEEDED;
+}
+
+.main-section {
+    margin: 20px;
+    margin-left: 22%; 
+    width: calc(78% - 20px);
+    background-color: #FAFAFA;
+}
+
+.chat-layout {
+    height: 635px;
+    max-height:calc(80vh - 20px) ;
+    overflow-y: scroll;
+    border: 0.5px solid #c3c3c3;
+    background-color: #fefcfc;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.chat {
+    clear: both;
+    margin-bottom: 10px;
+}
+
+.chat-bubble {
+    display: inline-block;
+    max-width: 80%;
+    padding: 10px;
+    background-color: #E0E0E0;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+.chat-bubble::before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 7px 5px 0;
+    border-color: transparent #E0E0E0 transparent transparent;
+    left: 5px;
+    top: 50%;
+    margin-top: -5px;
+}
+
+.chat-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.input-section {
+    margin-top: 10px;
+
+}
